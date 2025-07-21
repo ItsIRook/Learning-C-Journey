@@ -3,9 +3,8 @@
 int main() {
     int limit, dislimit;
     printf("Enter the number of elements in the array: ");
-    scanf("%d", &limit);
-    if (limit <= 0) {
-        printf("Error: The number of elements must be greater than zero.\n");
+    if (scanf("%d", &limit) !=1 || limit <=0) {
+        printf("Invalid input for number of elements. \n");
         return 1;
     }
     int marks[limit];
