@@ -15,7 +15,7 @@ int main() {
     printf("Enter the number of elements to display: ");
     scanf("%d", &dislimit);
     if (dislimit > limit) {
-        printf("The number of element to display is greater than number of elements int the array. \n Please try again");
+        printf("The number of elements to display is greater than number of elements in the array. \n Please try again");
             }
     else {
         printf("The marks of the first %d students are: \n", dislimit);
