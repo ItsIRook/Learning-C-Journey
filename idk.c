@@ -13,10 +13,10 @@ int main() {
 
      if (found > 0) {
         printf("Yes, %d is a blast!\n", test);
-     if (found == 0) {
+     else {
         printf("No, %d is not a blast.\n", test);
      }
-    return 0;'
+    return 0;
      }
 }
 
