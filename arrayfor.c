@@ -4,6 +4,10 @@ int main() {
     int limit, dislimit;
     printf("Enter the number of elements in the array: ");
     scanf("%d", &limit);
+    if (limit <= 0) {
+        printf("Error: The number of elements must be greater than zero.\n");
+        return 1;
+    }
     int marks[limit];
     for (int i = 0; i<limit; i++) {
         printf("Enter marks for student %d: ", i+1);
