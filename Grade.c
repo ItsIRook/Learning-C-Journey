@@ -24,5 +24,5 @@ int main() {
     else {
         printf("You received an F.\n");
     }
-    
+    return 0;
 }
