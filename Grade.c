@@ -6,7 +6,7 @@ int main() {
     scanf("%d", &grade);
     if (grade < 0 || grade > 100) {
         printf("Invalid grade. Please enter a grade between 0 and 100.\n");
-        return 1; // Exit the program with an error code
+        return 1; 
     }
 
     else if (grade >= 90) {
