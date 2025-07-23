@@ -14,6 +14,6 @@ int main() {
     }
     avg = (float)sum/limit;
     printf("Sum of first %d natural numbers is %d\n", limit, sum);
-    printf("Mean of the first %d natural numbers is %f\n", limit, avg);
+    printf("Mean of the first %d natural numbers is %.2f\n", limit, avg);
     return 0;
 }
