@@ -119,6 +119,43 @@ void bub(){
   }
 }
 
+void arrsum(){
+  int m ,n, i, j, a[10][10], cs[10], rs[10];
+  printf("Enter the array dimensions : ");
+  scanf("%d%d",&n,&m);
+  printf("Enter the elements :\n");
+  for(i=0; i<n; i++){
+    for(j=0; j<m; j++){
+      scanf("%d",&a[i][j]);
+    }
+  }
+  for(i=0; i<n; i++){
+    rs[i] = 0;
+    cs[i] = 0;
+    for(j=0; j<m; j++){
+      rs[i]+=a[i][j];
+      cs[i]+=a[j][i];
+    }
+  }
+  for(i=0; i<m; i++){
+    cs[i] = 0;
+    for(j=0; j<n; j++){
+      cs[i]+=a[j][i];
+    }
+  }
+  for(i=0; i<n; i++){
+    for(j=0; j<m; j++){
+      printf("%d\t",a[i][j]);
+    }
+    printf("-->&d",rs[i]);
+    printf("\n");
+  }
+  for(i=0; i<m; i++){
+    printf(" |\n""\/""%d\t",cs[i]);
+  }
+  printf("\n");
+}
+
 int main(){
   int choice;
   printf("Enter the option :"
