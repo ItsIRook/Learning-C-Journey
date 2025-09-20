@@ -165,6 +165,7 @@ int main(){
   "\n4. Find the octal value from binary."
   "\n5. Binary search."
   "\n6. Bubble sort."
+  "\n7. Row and Column Sum."
   "\nEnter your choice : ");
   scanf("%d",&choice);
   switch(choice){
@@ -185,6 +186,9 @@ int main(){
       break;
     case 6:
       bub();
+      break;
+    case 7:
+      arrsum();
       break;
     default:
       printf("Enter a valid option.\n");
