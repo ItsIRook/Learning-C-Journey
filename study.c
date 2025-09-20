@@ -151,7 +151,7 @@ void arrsum(){
     printf("\n");
   }
   for(i=0; i<m; i++){
-    printf(" |\n""\/""%d\t",cs[i]);
+    printf(":\n%d\t",cs[i]);
   }
   printf("\n");
 }
